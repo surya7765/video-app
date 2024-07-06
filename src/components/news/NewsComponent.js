@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import NavBar from "../navbar/Navbar";
 function NewsComponent() {
   const [news, setNews] = useState([]);
   useEffect(() => {
@@ -9,6 +10,7 @@ function NewsComponent() {
   }, []);
   return (
     <div>
+      <NavBar/>
       <div className="container">
         <div className="row">
             {

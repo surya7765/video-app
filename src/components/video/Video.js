@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import NavBar from "../navbar/Navbar";
 
 function Video() {
   
@@ -14,6 +15,7 @@ function Video() {
 
   return (
     <div>
+      <NavBar/>
       <div className="container">
         <div className="row">
           {videos.map((video, key) => (
